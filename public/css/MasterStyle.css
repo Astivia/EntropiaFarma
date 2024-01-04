@@ -1,0 +1,173 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+}
+
+body.dark-mode {
+    background-color: #333; /* fondo oscuro en modo oscuro */
+    color: #000; /* texto claro en modo oscuro */
+}
+
+/*--------------------------------------------NavigationBarStyles--------------------------------------------------------------------*/
+.Navigation-Bar{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: space-between;
+    z-index: 5;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.Navigation-Bar .controls{
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+}
+
+.Navigation-Bar .controls ul{
+    list-style-type: none;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Navigation-Bar .controls ul li a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: #fff;
+}
+.Navigation-Bar .controls ul li a.active {
+    color: #3b7caf;
+    font-weight: bold;
+    border-bottom: 5px solid ; /* Ajusta el grosor y el color del borde inferior */
+    
+}
+/*--------------------------------------------ContentStyles--------------------------------------------------------------------*/
+.Content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Title {
+    font-family: cursive;
+    position: relative;
+    height: 600px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8%;
+    right: 8%;
+    bottom: 0;
+    /* background-image: url('../imgs/WellcomeEntropia.png'); */
+    background-image: url('../imgs/Wellcome.webp');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    filter: blur(0); /* Inicialmente sin desenfoque */
+    transition: filter 0.3s ease; /* Transición para suavizar el efecto de difuminado */
+    z-index: -1;
+}
+
+.Title:hover::before {
+    filter: blur(5px); /* Aplica el desenfoque cuando se pasa el cursor */
+}
+
+.Title h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 8px;
+    /* text-shadow: 2px 2px 4px rgba(0, 162, 255, 0.863); */
+    text-shadow: 2px 2px 4px #525353b4;
+    z-index: 2; 
+}
+
+.Title h1 span {
+    font-size: 60px;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px #525353b4;
+    z-index: 2; /* Coloca el texto sobre el fondo */
+}
+/*--------------------------------------------FooterStyles--------------------------------------------------------------------*/
+.footer-content{
+    position: absolute;
+    left: 0; 
+    margin: 0;
+    background-color: #242628;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.footer-section1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer-section1 .footerLogo{
+    margin-left:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section1 .footerLogo img{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
+
+.footer-section1 .Description-Text{
+    
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-section1 .Description-Text h1{
+    
+    text-align: left;
+}
+.footer-section1 .Description-Text p{
+    text-align: justify;
+    width: 60%;
+}
+.footer-section1 .Contact-Info{
+    
+    display: flex;
+    flex-direction: column;
+}
+.footer-section1 .Contact-Info ul{
+    list-style: none;
+}
+
+.footer-section1 .Contact-Info ul li a{
+    color: #fff;
+}
+
+.footer-section1 .Contact-Info .links ul{
+    list-style-type: none;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-section1 .Contact-Info .links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
