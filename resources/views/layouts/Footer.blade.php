@@ -9,7 +9,7 @@
             </div>
             <div class="Description-Text">
                 <h1>ENTROPIA FARMA <br> S. DE RL. DE CV.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eaque expedita iusto doloremque fuga! Dicta architecto quo, cupiditate possimus minus sapiente commodi? Laboriosam, accusantium! Facilis cumque ullam quam non architecto.</p>
+                <p>Comprometidos con la excelencia y la satisfacción del cliente, ofrecemos soluciones integrales para impulsar el éxito en la industria farmacéutica. Contáctanos y descubre cómo podemos contribuir al crecimiento de tu empresa. ¡Gracias por confiar en nosotros!</p>
             </div>
             <div class="Contact-Info">
                 <h1>Contacto</h1>

@@ -1,11 +1,41 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
     background-color: #000;
 }
 
 body.dark-mode {
-    background-color: #333; /* fondo oscuro en modo oscuro */
+    background-color: #5353532d; /* fondo oscuro en modo oscuro */
     color: #000; /* texto claro en modo oscuro */
+}
+
+p{
+    color: #fff;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+h2,h3{
+    color: #3b7caf;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del indicador (gris) */
+    border-radius: 6px; /* Borde redondeado del indicador */
 }
 
 /*--------------------------------------------NavigationBarStyles--------------------------------------------------------------------*/
@@ -53,7 +83,7 @@ body.dark-mode {
     
 }
 
-.Title {
+.Wellcome {
     font-family: cursive;
     position: relative;
     height: 600px;
@@ -63,7 +93,7 @@ body.dark-mode {
     justify-content: center;
 }
 
-.Title::before {
+.Wellcome::before {
     content: '';
     position: absolute;
     top: 0;
@@ -80,11 +110,11 @@ body.dark-mode {
     z-index: -1;
 }
 
-.Title:hover::before {
+.Wellcome:hover::before {
     filter: blur(5px); /* Aplica el desenfoque cuando se pasa el cursor */
 }
 
-.Title h1 {
+.Wellcome h1 {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
@@ -95,7 +125,7 @@ body.dark-mode {
     z-index: 2; 
 }
 
-.Title h1 span {
+.Wellcome h1 span {
     font-size: 60px;
     margin-top: 0;
     text-shadow: 2px 2px 4px #525353b4;
@@ -115,43 +145,48 @@ body.dark-mode {
     z-index: 5;
 }
 
-.footer-section1{
+.footer-section1 {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
-.footer-section1 .footerLogo{
-    margin-left:10%;
+
+.footer-section1 .footerLogo {
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-section1 .footerLogo img{
+
+.footer-section1 .footerLogo img {
     width: auto;
     height: auto;
     margin-top: 20px;
 }
 
-.footer-section1 .Description-Text{
-    
-    width: 33.3%;
+.footer-section1 .Description-Text {
+    flex: 1; /* El elemento se expandirá para ocupar el espacio restante */
+    margin-left: 50px; /* Ajusta según sea necesario */
     display: flex;
     flex-direction: column;
 }
-.footer-section1 .Description-Text h1{
-    
+
+.footer-section1 .Description-Text h1 {
     text-align: left;
 }
-.footer-section1 .Description-Text p{
+
+.footer-section1 .Description-Text p {
     text-align: justify;
-    width: 60%;
 }
-.footer-section1 .Contact-Info{
-    
+
+.footer-section1 .Contact-Info {
+    margin-left: 30;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
 }
+
 .footer-section1 .Contact-Info ul{
     list-style: none;
 }

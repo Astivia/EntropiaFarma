@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ asset('css/IndexStyle.css') }}">
 
     @section('Content')
-        <div class="Title">
+        <div class="Wellcome">
             <h1>ENTROPIA FARMA <br><span>S DE RL DE CV</span></h1>
         </div>
         <div class="Slogan">
@@ -20,8 +20,37 @@
             </div>
             <div class="Page-Text">
                 <h2>¿QUIENES SOMOS?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, atque natus non consequatur similique ea consectetur libero recusandae possimus beatae eos totam debitis et veniam voluptatum fuga eligendi, fugiat ducimus!</p>
+                <p>¡Bienvenido! Preparate para sumergirte en un mundo de innovación y excelencia en la industria farmacéutica. Nuestra razón de ser es impulsar tu triunfo en los negocios. ¡Explora con nosotros el camino hacia la excelencia farmacéutica!</p>
                 <a href="about"><button>Saber mas</button></a>
+            </div>
+        </div>
+        <div class="Products-resume">
+            <div class="line"><p>&nbsp&nbsp&nbsp</p></div>
+            <div class="Section">
+                <h2>CONOCE NUESTROS PRODUCTOS</h2>
+                <p>Con el compromiso de hacer de tu éxito nuestro propósito, ofrecemos una amplia gama de productos, desde equipos de vanguardia hasta insumos y refacciones de la más alta calidad.</p>
+                <div class="Products">
+                    
+                    <div class="Card">
+                        <a href="products">
+                            <h3><i class="fa-solid fa-industry"></i>&nbsp&nbspEquipos</h3>
+                        </a>
+                        <p>Descubre tecnologías innovadoras diseñadas para mejorar la eficiencia en tu laboratorio. </p>
+                    </div>
+                    <div class="Card">
+                        <a href="products">
+                            <h3><i class="fa-solid fa-flask-vial"></i>&nbsp&nbspInsumos</h3>
+                        </a>
+                        <p>Una amplia variedad de productos de alta calidad esenciales para tus procesos diarios.</p>
+                    </div>
+                    <div class="Card">
+                        <a href="products">
+                            <h3><i class="fa-solid fa-gears"></i>&nbsp&nbspRefacciones</h3>
+                        </a>
+                        <p>Encuentra piezas confiables que garantizan el rendimiento óptimo de tus equipos</p>
+                    </div>
+                    
+                </div>
             </div>
         </div>
         <div class="knowUs">
