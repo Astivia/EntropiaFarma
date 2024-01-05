@@ -30,7 +30,6 @@
                 <h2>CONOCE NUESTROS PRODUCTOS</h2>
                 <p>Con el compromiso de hacer de tu éxito nuestro propósito, ofrecemos una amplia gama de productos, desde equipos de vanguardia hasta insumos y refacciones de la más alta calidad.</p>
                 <div class="Products">
-                    
                     <div class="Card">
                         <a href="products">
                             <h3><i class="fa-solid fa-industry"></i>&nbsp&nbspEquipos</h3>
