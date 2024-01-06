@@ -46,11 +46,12 @@
                         <a href="products">
                             <h3><i class="fa-solid fa-gears"></i>&nbsp&nbspRefacciones</h3>
                         </a>
-                        <p>Encuentra piezas confiables que garantizan el rendimiento óptimo de tus equipos</p>
+                        <p>Encuentra piezas confiables para garantizar el rendimiento de tus equipos</p>
                     </div>
                     
                 </div>
             </div>
+            <img src="{{  asset ('imgs/IndexImgs/Image.png')}}" alt="imagen">
         </div>
         <div class="knowUs">
             <div class="Page-Text">
