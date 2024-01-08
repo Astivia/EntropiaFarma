@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Services extends Model
 {
-    use HasFactory;
+    protected $table = 'services';
+    protected $fillable = ['name','price','description', 'category','status'];
+
+    //para llave foranea
+    // public function genero()
+    // {
+    //     return $this->belongsTo(Genero::class, 'id_genero','id');
+    // }
 }
