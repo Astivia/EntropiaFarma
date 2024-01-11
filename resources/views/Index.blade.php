@@ -11,7 +11,7 @@
         </div>
     </div>
     <!-- Slogan -->
-    <div class="Slogan container-fluid text-white">
+    <div class="container-fluid text-white Slogan">
         <div class="row">
             <div class="col-12 text-center">
                 <span>NUESTRA RAZON DE SER ES TU EXITO EN LOS NEGOCIOS</span>
@@ -19,35 +19,35 @@
         </div>
     </div>
     <!-- Carrousell -->
-    <div class="Carrousell container-fluid">
-        <div class="row p-5 ">
-            <div class="col-12 text-center">
+    <div class="container-fluid Carrousell">
+        <div class="row ">
+            <div class="col-12">
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner col-12">
                         <div class="carousel-item active">
-                            <img src="{{ asset ('imgs/IndexImgs/carousell/c_1.jpeg')}}" class="d-block w-100" alt="...">
+                            <img src="{{ asset ('imgs/IndexImgs/carousell/c_0.webp')}}" class="d-block w-100" alt="..." height=70%>
                             <div class="carousel-caption d-none d-md-block text-primary">
                                 <h5>¡Bienvenido!</h5>
                                 <p class="">Preparate para sumergirte en un mundo de innovación y excelencia en la industria farmacéutica</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset ('imgs/IndexImgs/carousell/c_2.webp')}}" class="d-block w-100" alt="...">
+                            <img src="{{ asset ('imgs/IndexImgs/carousell/c_1.webp')}}" class="d-block w-100" alt="..." height=70%>
                             <div class="carousel-caption d-none d-md-block text-primary">
                                 <h5>Productos</h5>
                                 <p class="">Descubre tecnologías innovadoras diseñadas para mejorar la eficiencia en tu laboratorio.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset ('imgs/IndexImgs/carousell/c_3.webp')}}" class="d-block w-100" alt="...">
+                            <img src="{{ asset ('imgs/IndexImgs/carousell/c_2.webp')}}" class="d-block w-100" alt="..." height=70%>
                             <div class="carousel-caption d-none d-md-block text-primary">
-                                <h5>Third slide label</h5>
-                                <p class="">Some representative placeholder content for the third slide.</p>
+                                <h5>Servicios</h5>
+                                <p class="">No solo nos destacamos por nuestros productos, sino también por nuestros servicios especializados.</p>
                             </div>
                         </div>
                     </div>
@@ -64,50 +64,63 @@
         </div>
     </div>
     <!-- Products-Reume -->
-
-    <div class="Products-Resume container-fluid">
+    <div class="container-fluid Products-Resume ">
         <div class="row">
-            <div class="line col-xs-1 col-md-3 col-lg-3"></div>
-            <div class="Section col-xs-12 col-md-9 col-lg-5">
+            <div class="line col-xs-12 col-md-2 col-lg-2"></div>
+            <div class="Section col-xs-12 col-md-5 col-lg-10">
                 <h2>Conoce Nuestros Productos</h2>
                 <p>Con el compromiso de hacer de tu éxito nuestro propósito, ofrecemos una amplia gama de productos, desde equipos de vanguardia hasta insumos y refacciones de la más alta calidad.</p>
                 <div class="row row-15">
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
-                  <div class="box-default">
-                    <div class="box-default-title text-primary">Equipo Industrial</div>
-                    <p class="box-default-description">Descubre tecnologías innovadoras diseñadas para mejorar la eficiencia en tu laboratorio.</p>
-                    <span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears text-primary"></span>
-                  </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="box-default">
+                            <div class="box-default-title h3">
+                                <a href="products">
+                                    <i class="fa-solid fa-industry"></i>&nbspEquipo Industrial</div>
+                                </a>
+                                 <p class="box-default-description">Descubre tecnologías innovadoras diseñadas para mejorar la eficiencia en tu laboratorio.</p>
+                            </div>
+                        </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="box-default">
+                             <div class="box-default-title h3">
+                                <a href="products">
+                                    <i class="fa-solid fa-flask-vial"></i>&nbspInsumos</div>
+                                </a>
+                                <p class="box-default-description">Una amplia variedad de productos de alta calidad esenciales para tus procesos diarios.</p>
+                    
+                            </div>
+                        </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="box-default">
+                            <div class="box-default-title h3">
+                                <a href="products">
+                                    <i class="fa-solid fa-gear"></i>&nbspRefacciones</div>
+                                </a>
+                                <p class="box-default-description">Encuentra piezas confiables para garantizar el rendimiento de tus equipos</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="box-default">
-                    <div class="box-default-title text-primary">Insumos Farmaceuticos</div>
-                    <p class="box-default-description">Una amplia variedad de productos de alta calidad esenciales para tus procesos diarios.</p>
-                    <span class="box-default-icon novi-icon icon-lg mercury-icon-target-2 text-primary"></span>
-                  </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
-                  <div class="box-default">
-                    <div class="box-default-title text-primary">Refacciones</div>
-                    <p class="box-default-description">Encuentra piezas confiables para garantizar el rendimiento de tus equipos</p>
-                    <span class="box-default-icon novi-icon icon-lg mercury-icon-user text-primary"></span>
-                  </div>
-                </div>
-                <!-- <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
-                  <div class="box-default">
-                    <div class="box-default-title text-primary">Creative Approach</div>
-                    <p class="box-default-description">Every project we work on is based on the creative solutions of any issues.</p>
-                    <span class="box-default-icon novi-icon icon-lg mercury-icon-partners text-primary"></span>
-                  </div>
-                </div> -->
-              </div>
             </div>
-            <div class="Products-image col-xs-8 col-md-12 col-lg-4 text-center">
-                <img src="{{  asset ('imgs/IndexImgs/Image.png')}}" class="image-fluid" alt="imagen">
+            <div class="Products-image col-xs-12 col-md-7 col-lg-4 text-center">
+                <img src="{{asset ('imgs/IndexImgs/OIG2.jpeg')}}" class="image-fluid" alt="imagen">
             </div>
         </div>
     </div>
-
+    <!-- Services-Reume -->
+    <div class="Products-Resume container-fluid">
+        <div class="row text-white">
+            <div class="Products-image col-xs-8 col-md-12 col-lg-4 text-center">
+                <img src="{{asset ('imgs/IndexImgs/OIG.jpeg')}}" alt="Imagen">
+            </div>
+            <div class="col-xs-12 col-md-10 col-lg-6 Section">
+                <h2>Nuestros Servicios</h2>
+                <p>No solo nos destacamos por nuestros productos, sino también por nuestros servicios especializados.Tu éxito es nuestra prioridad. ¡Bienvenido a una experiencia farmacéutica superior en Entropia Farma!</p>
+                
+            </div>
+            <div class="line col-xs-1 col-md-2 col-lg-2"></div>
+        </div>
+    </div>
         <!-- 
         <div class="knowUs">
             <div class="Page-Text">

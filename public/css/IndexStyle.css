@@ -1,4 +1,3 @@
-
 .Wellcome {
     position: relative;
     height:600px;
@@ -50,11 +49,18 @@
     font-size: 200%;
     text-shadow: 2px 2px 4px #000;
 }
+
 .Carrousell {
-    max-width: 50%;
+    padding: 10%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    height: 70%; /* Reducir la altura */
+    max-width: 60%; /* Reducir el ancho */
+    margin: auto; /* Centrar el carrusel */
 }
 
 .Carrousell img{
+    width: 100%; /* Ajustar el ancho de las imágenes al 100% */
     border-radius: 5%;
 }
 .Carrousell h5{
@@ -68,7 +74,7 @@
 
 @media (max-width: 767px) {
     .Carrousell {
-        max-width: 100%; /* Establece el ancho al 100% en dispositivos con una anchura de pantalla menor o igual a 767px */
+        max-width: 100%; 
     }
 }
 
@@ -81,15 +87,35 @@
     margin-left: 0;
 }
 
+.Products-Resume{
+    display: flex;
+}
+.Products-Resume .Section{
+    
+}
+
+.Products-Resume .Products-image{
+    align-items: center;
+    justify-content: center;
+}
 
 .Products-Resume img{
-    max-width: 95%;
+    max-width: 75%;
     padding: 0.5%;
-    border-radius: 5%;
-    background-color: #fff;
+    border-radius: 100%;
+    background-color: #3b7caf;
     margin:2%;
 }
 
+.box-default-title a{
+    color: #3b7caf;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.box-default-title a:hover{
+    color: #fff;
+}
 
 
 /* 

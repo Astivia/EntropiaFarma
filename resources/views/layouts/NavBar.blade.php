@@ -43,9 +43,9 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="products">Productos</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Equipos</a></li>
-            <li><a class="dropdown-item" href="#">Insumos</a></li>
-            <li><a class="dropdown-item" href="#">Refacciones</a></li>
+            <li><a class="dropdown-item" href="products#Equipment">Equipos</a></li>
+            <li><a class="dropdown-item" href="products#">Insumos</a></li>
+            <li><a class="dropdown-item" href="products#">Refacciones</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
