@@ -524,10 +524,14 @@ transform: translate(0em, 0.2em);
     justify-content: center;
 }
 
+.Equipment-images img{
+    width: 23%;
+}
 
 .Eq_button{
  background-color: #3b7caf;
  color: #fff;
+ margin-top: 20px;
  padding:1%;
  text-decoration: none; 
 }
@@ -537,9 +541,59 @@ transform: translate(0em, 0.2em);
     font-weight: bold;
     color:#3b7caf;
 }
-
 @media (max-width: 767px) {
-    .Eq_button{
+    .Eq_button {
         padding: 5%;
+    }
+
+    .Equipment-images {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+    }
+
+    .Equipment-images img {
+        width: 85%;
+        opacity: 0;
+        animation: fadeInOut 16s linear infinite;
+        position: absolute;
+    }
+
+    .Equipment-images img.active {
+        opacity: 1;
+    }
+
+    @keyframes fadeInOut {
+        0%, 20% {
+            opacity: 0;
+        }
+        25%, 45% {
+            opacity: 1;
+        }
+        50%, 100% {
+            opacity: 0;
+        }
+    }
+
+    .Equipment-images img {
+        animation-delay: 0s;
+    }
+
+    .Equipment-images img:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .Equipment-images img:nth-child(2) {
+        animation-delay: 4s;
+    }
+
+    .Equipment-images img:nth-child(3) {
+        animation-delay: 8s;
+    }
+
+    .Equipment-images img:nth-child(4) {
+        animation-delay: 12s;
     }
 }

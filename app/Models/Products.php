@@ -8,11 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Products extends Model
 {
     protected $table = 'products';
-    protected $fillable = ['name','price','description', 'category','stock','status'];
+    protected $fillable = ['name','brand','description','id_type','price',
+                            'stock','tecnicalDetails','expiration','status'];
 
     //para llave foranea
-    // public function genero()
-    // {
-    //     return $this->belongsTo(Genero::class, 'id_genero','id');
-    // }
+    public function type()
+    {
+        return $this->belongsTo(ProductsType::class, 'id_type','id');
+    }
 }

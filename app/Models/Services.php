@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Services extends Model
 {
     protected $table = 'services';
-    protected $fillable = ['name','price','description', 'category','status'];
+    protected $fillable = ['type','description', 'price','status'];
 
     //para llave foranea
     // public function genero()
